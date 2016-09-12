@@ -1,0 +1,18 @@
+11111111111111111
+btvn: microposts: 
+	table: user + micropost.
+	user: id, email, name
+	micropost: user's content
+	1 user n micropost
+
+show micropost of 1 user?:
+
+lam lai het web: user + content
+view microposts trong profile cua user
+combox chon user khi tao micropost 
+
+		
+add in show.html.erb:
+	Micropost:
+	<"Micropost.where (user_id @user.id).each do |micropost|">
+	<li><"=micropost.contents"> </li>
